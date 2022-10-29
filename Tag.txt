@@ -1,0 +1,13 @@
+<time class="last-time ml-5" id="lastQuoteTime">2022-10-14 13:30</time>
+
+RSI<i parameter1="">5</i><span data-char="↓" decimals="2" rsi1="">13.90</span></li>
+RSI<i parameter2="">10</i><span data-char="" decimals="2" rsi2="">20.78</span></li>
+K<i parameter1="">9</i><span data-char="↓" decimals="2" k="">8.90</span></li>
+D<i parameter1="">9</i><span data-char="↓" decimals="2" d="">14.23</span></li>
+
+
+id=""lastQuoteTime"">(([\s\S])*?)<
+decimals=""2"" rsi1="""">(([\s\S])*?)<
+decimals=""2"" rsi2="""">(([\s\S])*?)<
+decimals=""2"" k="""">(([\s\S])*?)<
+decimals=""2"" d="""">(([\s\S])*?)<

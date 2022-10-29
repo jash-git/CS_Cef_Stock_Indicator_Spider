@@ -1,0 +1,9 @@
+int KD_Golden_Cross = ((Convert.ToDouble(m_StrK9) >= Convert.ToDouble(m_StrD9)) && (Convert.ToDouble(m_StrK9) <= 50)) ? (Convert.ToInt32(Convert.ToDouble(m_StrK9)) / 10 * 10) : 0;
+int KD_Death_Cross = ((Convert.ToDouble(m_StrK9) <= Convert.ToDouble(m_StrD9)) && (Convert.ToDouble(m_StrK9) >= 50)) ? (Convert.ToInt32(Convert.ToDouble(m_StrK9)) / 10 * 10) : 0;
+int RSI_Golden_Cross = ((Convert.ToDouble(m_StrRSI5) >= Convert.ToDouble(m_StrRSI10)) && (Convert.ToDouble(m_StrRSI5) <= 50)) ? (Convert.ToInt32(Convert.ToDouble(m_StrRSI5)) / 10 * 10) : 0;
+int RSI_Death_Cross = ((Convert.ToDouble(m_StrRSI5) <= Convert.ToDouble(m_StrRSI10)) && (Convert.ToDouble(m_StrRSI5) >= 50)) ? (Convert.ToInt32(Convert.ToDouble(m_StrRSI5)) / 10 * 10) : 0;
+
+					
+SELECT * FROM main WHERE RSI_Golden_Cross>0 AND KD_Golden_Cross>0 ORDER BY RSI_Golden_Cross DESC,KD_Golden_Cross DESC
+
+SELECT * FROM main WHERE RSI_Death_Cross>0 AND KD_Death_Cross>0 ORDER BY RSI_Death_Cross DESC,KD_Death_Cross DESC
