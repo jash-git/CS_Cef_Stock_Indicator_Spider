@@ -237,14 +237,29 @@ namespace CS_Cef
                 if (m_intErrorCount > 40)
                 {
                     m_intErrorCount = 0;
-                    MessageBox.Show("ERROR");
+                    String StrURL = String.Format("https://www.wantgoo.com/stock/{0}/technical-chart", m_ArrayStrStock_codes[m_intStocksId]);
+                    WebBrowser.Load(StrURL);
                     timer1.Enabled = true;
                 }
                 else
                 {
                     MessageBox.Show("FINISH");
+                    Form2 form2=new Form2();
+                    form2.ShowDialog();
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
         }
     }
 }
