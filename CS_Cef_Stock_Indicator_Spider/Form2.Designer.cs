@@ -41,6 +41,8 @@
             this.KD_Death_Cross01 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RSI_Golden_Cross01 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RSI_Death_Cross01 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Hammer01 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FallingStar01 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time02 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stock_code02 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.K902 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +53,8 @@
             this.KD_Death_Cross02 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RSI_Golden_Cross02 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RSI_Death_Cross02 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Hammer02 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FallingStar02 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +72,9 @@
             this.KD_Golden_Cross01,
             this.KD_Death_Cross01,
             this.RSI_Golden_Cross01,
-            this.RSI_Death_Cross01});
+            this.RSI_Death_Cross01,
+            this.Hammer01,
+            this.FallingStar01});
             this.dataGridView1.Location = new System.Drawing.Point(12, 39);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -89,7 +95,9 @@
             this.KD_Golden_Cross02,
             this.KD_Death_Cross02,
             this.RSI_Golden_Cross02,
-            this.RSI_Death_Cross02});
+            this.RSI_Death_Cross02,
+            this.Hammer02,
+            this.FallingStar02});
             this.dataGridView2.Location = new System.Drawing.Point(12, 524);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
@@ -101,103 +109,145 @@
             // 
             this.Time01.HeaderText = "Time";
             this.Time01.Name = "Time01";
-            this.Time01.Width = 200;
+            this.Time01.Width = 150;
             // 
             // Stock_code01
             // 
             this.Stock_code01.HeaderText = "Stock_code";
             this.Stock_code01.Name = "Stock_code01";
+            this.Stock_code01.Width = 80;
             // 
             // K901
             // 
             this.K901.HeaderText = "K9";
             this.K901.Name = "K901";
+            this.K901.Width = 80;
             // 
             // D901
             // 
             this.D901.HeaderText = "D9";
             this.D901.Name = "D901";
+            this.D901.Width = 80;
             // 
             // RSI501
             // 
             this.RSI501.HeaderText = "RSI5";
             this.RSI501.Name = "RSI501";
+            this.RSI501.Width = 80;
             // 
             // RSI1001
             // 
             this.RSI1001.HeaderText = "RSI10";
             this.RSI1001.Name = "RSI1001";
+            this.RSI1001.Width = 80;
             // 
             // KD_Golden_Cross01
             // 
             this.KD_Golden_Cross01.HeaderText = "KD_Golden_Cross";
             this.KD_Golden_Cross01.Name = "KD_Golden_Cross01";
+            this.KD_Golden_Cross01.Width = 80;
             // 
             // KD_Death_Cross01
             // 
             this.KD_Death_Cross01.HeaderText = "KD_Death_Cross";
             this.KD_Death_Cross01.Name = "KD_Death_Cross01";
+            this.KD_Death_Cross01.Width = 80;
             // 
             // RSI_Golden_Cross01
             // 
             this.RSI_Golden_Cross01.HeaderText = "RSI_Golden_Cross";
             this.RSI_Golden_Cross01.Name = "RSI_Golden_Cross01";
+            this.RSI_Golden_Cross01.Width = 80;
             // 
             // RSI_Death_Cross01
             // 
             this.RSI_Death_Cross01.HeaderText = "RSI_Death_Cross";
             this.RSI_Death_Cross01.Name = "RSI_Death_Cross01";
+            this.RSI_Death_Cross01.Width = 80;
+            // 
+            // Hammer01
+            // 
+            this.Hammer01.HeaderText = "Hammer";
+            this.Hammer01.Name = "Hammer01";
+            this.Hammer01.Width = 80;
+            // 
+            // FallingStar01
+            // 
+            this.FallingStar01.HeaderText = "FallingStar";
+            this.FallingStar01.Name = "FallingStar01";
+            this.FallingStar01.Width = 80;
             // 
             // Time02
             // 
             this.Time02.HeaderText = "Time";
             this.Time02.Name = "Time02";
-            this.Time02.Width = 200;
+            this.Time02.Width = 150;
             // 
             // Stock_code02
             // 
             this.Stock_code02.HeaderText = "Stock_code";
             this.Stock_code02.Name = "Stock_code02";
+            this.Stock_code02.Width = 80;
             // 
             // K902
             // 
             this.K902.HeaderText = "K9";
             this.K902.Name = "K902";
+            this.K902.Width = 80;
             // 
             // D902
             // 
             this.D902.HeaderText = "D9";
             this.D902.Name = "D902";
+            this.D902.Width = 80;
             // 
             // RSI502
             // 
             this.RSI502.HeaderText = "RSI5";
             this.RSI502.Name = "RSI502";
+            this.RSI502.Width = 80;
             // 
             // RSI1002
             // 
             this.RSI1002.HeaderText = "RSI10";
             this.RSI1002.Name = "RSI1002";
+            this.RSI1002.Width = 80;
             // 
             // KD_Golden_Cross02
             // 
             this.KD_Golden_Cross02.HeaderText = "KD_Golden_Cross";
             this.KD_Golden_Cross02.Name = "KD_Golden_Cross02";
+            this.KD_Golden_Cross02.Width = 80;
             // 
             // KD_Death_Cross02
             // 
             this.KD_Death_Cross02.HeaderText = "KD_Death_Cross";
             this.KD_Death_Cross02.Name = "KD_Death_Cross02";
+            this.KD_Death_Cross02.Width = 80;
             // 
             // RSI_Golden_Cross02
             // 
             this.RSI_Golden_Cross02.HeaderText = "RSI_Golden_Cross";
             this.RSI_Golden_Cross02.Name = "RSI_Golden_Cross02";
+            this.RSI_Golden_Cross02.Width = 80;
             // 
             // RSI_Death_Cross02
             // 
             this.RSI_Death_Cross02.HeaderText = "RSI_Death_Cross";
             this.RSI_Death_Cross02.Name = "RSI_Death_Cross02";
+            this.RSI_Death_Cross02.Width = 80;
+            // 
+            // Hammer02
+            // 
+            this.Hammer02.HeaderText = "Hammer";
+            this.Hammer02.Name = "Hammer02";
+            this.Hammer02.Width = 80;
+            // 
+            // FallingStar02
+            // 
+            this.FallingStar02.HeaderText = "FallingStar";
+            this.FallingStar02.Name = "FallingStar02";
+            this.FallingStar02.Width = 80;
             // 
             // Form2
             // 
@@ -220,6 +270,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Time01;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock_code01;
         private System.Windows.Forms.DataGridViewTextBoxColumn K901;
@@ -230,7 +281,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn KD_Death_Cross01;
         private System.Windows.Forms.DataGridViewTextBoxColumn RSI_Golden_Cross01;
         private System.Windows.Forms.DataGridViewTextBoxColumn RSI_Death_Cross01;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Hammer01;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FallingStar01;
         private System.Windows.Forms.DataGridViewTextBoxColumn Time02;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock_code02;
         private System.Windows.Forms.DataGridViewTextBoxColumn K902;
@@ -241,5 +293,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn KD_Death_Cross02;
         private System.Windows.Forms.DataGridViewTextBoxColumn RSI_Golden_Cross02;
         private System.Windows.Forms.DataGridViewTextBoxColumn RSI_Death_Cross02;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Hammer02;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FallingStar02;
     }
 }

@@ -147,18 +147,18 @@ namespace CS_Cef
             dataGridView1Clean();
             dataGridView2Clean();
 
-            String SQL = "SELECT * FROM main WHERE RSI_Golden_Cross>0 OR KD_Golden_Cross>0 ORDER BY RSI_Golden_Cross DESC,KD_Golden_Cross DESC";
+            String SQL = "SELECT * FROM main WHERE RSI_Golden_Cross>0 OR KD_Golden_Cross>0 ORDER BY Hammer DESC,FallingStar DESC,RSI_Golden_Cross DESC,KD_Golden_Cross DESC";
             DataTable dataTable = SQLDataTableModel.GetDataTable(@".\Stock.db", SQL);
             for(int i=0; i < dataTable.Rows.Count; i++)
             {
-                dataGridView1.Rows.Add(dataTable.Rows[i][0].ToString(), dataTable.Rows[i][1].ToString(), dataTable.Rows[i][2].ToString(), dataTable.Rows[i][3].ToString(), dataTable.Rows[i][4].ToString(), dataTable.Rows[i][5].ToString(), dataTable.Rows[i][6].ToString(), dataTable.Rows[i][7].ToString(), dataTable.Rows[i][8].ToString(), dataTable.Rows[i][9].ToString());
+                dataGridView1.Rows.Add(dataTable.Rows[i][0].ToString(), dataTable.Rows[i][1].ToString(), dataTable.Rows[i][2].ToString(), dataTable.Rows[i][3].ToString(), dataTable.Rows[i][4].ToString(), dataTable.Rows[i][5].ToString(), dataTable.Rows[i][6].ToString(), dataTable.Rows[i][7].ToString(), dataTable.Rows[i][8].ToString(), dataTable.Rows[i][9].ToString(), dataTable.Rows[i][14].ToString(), dataTable.Rows[i][15].ToString());
             }
 
-            SQL = "SELECT * FROM main WHERE RSI_Death_Cross>0 OR KD_Death_Cross>0 ORDER BY RSI_Death_Cross DESC,KD_Death_Cross DESC";
+            SQL = "SELECT * FROM main WHERE RSI_Death_Cross>0 OR KD_Death_Cross>0 ORDER BY FallingStar DESC,Hammer DESC,RSI_Death_Cross DESC,KD_Death_Cross DESC";
             dataTable = SQLDataTableModel.GetDataTable(@".\Stock.db", SQL);
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
-                dataGridView2.Rows.Add(dataTable.Rows[i][0].ToString(), dataTable.Rows[i][1].ToString(), dataTable.Rows[i][2].ToString(), dataTable.Rows[i][3].ToString(), dataTable.Rows[i][4].ToString(), dataTable.Rows[i][5].ToString(), dataTable.Rows[i][6].ToString(), dataTable.Rows[i][7].ToString(), dataTable.Rows[i][8].ToString(), dataTable.Rows[i][9].ToString());
+                dataGridView2.Rows.Add(dataTable.Rows[i][0].ToString(), dataTable.Rows[i][1].ToString(), dataTable.Rows[i][2].ToString(), dataTable.Rows[i][3].ToString(), dataTable.Rows[i][4].ToString(), dataTable.Rows[i][5].ToString(), dataTable.Rows[i][6].ToString(), dataTable.Rows[i][7].ToString(), dataTable.Rows[i][8].ToString(), dataTable.Rows[i][9].ToString(), dataTable.Rows[i][14].ToString(), dataTable.Rows[i][15].ToString());
             }
         }
 
